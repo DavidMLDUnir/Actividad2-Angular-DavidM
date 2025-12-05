@@ -1,0 +1,101 @@
+<section class="contenedor-Instalacion">
+
+  <h1>2. Instalación de Angular</h1>
+
+  <div class="apartado">
+    <h2>¿Se precisa instalación?</h2>
+    <p>
+      Sí. Para trabajar con Angular es necesario instalar el entorno base que permite usar 
+      <strong>Angular CLI</strong>, la herramienta oficial para crear, compilar y ejecutar 
+      proyectos de Angular. Esta instalación se realiza en el equipo local, aunque también 
+      existen versiones online como StackBlitz para pruebas rápidas.
+    </p>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Qué pasos hay que realizar para la instalación?</h2>
+    <p>Para instalar Angular en tu equipo hay que seguir estos pasos:</p>
+
+    <ol>
+      <li>
+        <strong>Instalar Node.js</strong>  
+        Angular necesita Node.js para gestionar dependencias a través de npm  
+        (Node Package Manager).  
+        Se debe descargar desde la página oficial y seguir el instalador. 
+        A continuación, adjunto el enlace a la página oficial para la descarga
+        <a href="https://nodejs.org/es" target="_blank">Node.js</a>
+      </li>
+
+      <li>
+        <strong>Verificar la instalación</strong>  
+        Ejecutamos en nuestra terminal:  
+        <pre><code>node -v  
+npm -v</code></pre>
+
+      </li>
+
+      <li>
+        <strong>Instalar Angular CLI</strong>  
+        Con el siguiente comando:  
+        <pre><code>npm install -g @angular/cli</code></pre>
+      </li>
+    
+    </ol>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Versiones necesarias?</h2>
+    <p>
+      Para trabajar con Angular 21, la versión recomendada de Node.js suele ser la más 
+      reciente que nos aparecera con el indicativo LTS (Long Term Support), habitualmente la versión 18 o 20.
+    </p>
+
+    <p>
+      Puedes comprobar la compatibilidad en la documentación oficial, pero la combinación más usada es:
+    </p>
+
+    <ul>
+      <li><strong>Angular CLI:</strong> 17+ o 21 (según la instalación)</li>
+      <li><strong>Node.js:</strong> 18.x o 20.x LTS</li>
+      <li><strong>npm:</strong> 9 o superior</li>
+    </ul>
+    <p>Te dejo a continuación el link de Angular, por si te fuese necesario comprobar la versión</p>
+    <a href="https://angular.dev/" target="_blank">Angular</a>
+
+  </div>
+
+  <div class="apartado">
+    <h2>¿Rutas para tener en cuenta?</h2>
+    <p>
+      No es necesario modificar rutas del sistema, pero al crear el proyecto se recomienda
+      hacerlo en una carpeta sin espacios para evitar problemas al ejecutar comandos.
+    </p>
+    <p>
+      La ruta del proyecto será la carpeta donde se ejecute <code>ng new</code>.
+    </p>
+    
+  </div>
+
+  <div class="apartado">
+    <h2>¿Variables de entorno?</h2>
+    <p>
+      Angular no requiere variables de entorno específicas para funcionar, pero en ciertos 
+      proyectos avanzados pueden configurarse mediante archivos como:  
+      <code>src/environments/environment.ts</code>.
+    </p>
+    <p>
+      Para la instalación básica, no es necesario configurar nada.
+    </p>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Necesita base de datos?</h2>
+    <p>
+      Angular no necesita base de datos para instalarse ni para funcionar en su entorno 
+      de desarrollo.  
+      Sin embargo, puede conectarse a APIs REST, servicios web o backends externos que sí 
+      usen bases de datos (por ejemplo Node.js, Java Spring, Firebase, etc.).
+    </p>
+  </div>
+
+</section>

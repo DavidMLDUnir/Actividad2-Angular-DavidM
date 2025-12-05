@@ -1,0 +1,114 @@
+<section class="contenedor-explicacion ">
+
+  <h1>5. Explicación del Funcionamiento del Framework Angular</h1>
+
+  <div class="apartado">
+    <h2>¿Sobre qué elementos actúa Angular?</h2>
+    <p>
+      Angular trabaja principalmente sobre una estructura basada en 
+      <strong>componentes</strong>, <strong>módulos</strong> y <strong>plantillas HTML</strong>.
+      Estos elementos se combinan para crear interfaces dinámicas y reutilizables.
+    </p>
+
+    <ul>
+      <li><strong>Componentes:</strong> Son las unidades básicas de construcción de la interfaz. 
+          Cada componente tiene su propia lógica, plantilla HTML y estilos.</li>
+      <li><strong>Módulos:</strong> Agrupan componentes, servicios y otras funcionalidades. 
+          El módulo principal es <code>App</code>.</li>
+      <li><strong>Servicios:</strong> Gestionan la lógica de negocio, las peticiones HTTP 
+          y funciones reutilizables.</li>
+      <li><strong>Templates:</strong> Archivos HTML que definen la vista del componente.</li>
+      <li><strong>Rutas:</strong> Permiten navegar entre páginas dentro de la aplicación.</li>
+    </ul>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Cómo se editan o modifican los ficheros en Angular?</h2>
+    <p>
+      Cada componente tiene una estructura compuesta por varios archivos:
+    </p>
+
+   
+    <p> 
+        <img src="EstructuraComponentes.png" alt="Estructura Componente" style="border-radius: 15px;" >
+    </p>
+
+    <p>
+      La edición se realiza directamente en estos archivos:
+    </p>
+
+    <ul>
+      <li><strong>.ts</strong>: Define la clase del componente y su comportamiento.</li>
+      <li><strong>.html</strong>: Contiene la plantilla que se muestra en pantalla.</li>
+      <li><strong>.css</strong>: Define estilos locales para ese componente.</li>
+      <li><strong>.spec.ts</strong>: Define el archivo de pruebas unitarias.</li>
+    </ul>
+
+    <p>
+      Angular refresca los cambios automáticamente gracias al servidor de desarrollo
+      iniciado con <code>ng serve</code>.
+    </p>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Cómo se relacionan los archivos dentro del framework?</h2>
+    <p>
+      Angular utiliza decoradores y etiquetas personalizadas para enlazar componentes 
+      entre sí. Cada componente tiene un <strong>nombre</strong> que lo identifica 
+      dentro de una plantilla HTML.
+    </p>
+
+    <p>
+      Por ejemplo, si un componente se declara con este nombre:
+    </p>
+
+    <pre><code>nombre: 'hola-mundo'</code></pre>
+
+    <p>
+      Puedes insertarlo en otro HTML así:
+    </p>
+
+    <pre><code>&lt;hola-mundo&gt;&lt;/hola-mundo&gt;</code></pre>
+
+    <p>
+      Esto permite construir interfaces modulares y organizadas.
+    </p>
+  </div>
+
+  <div class="apartado">
+    <h2>¿Cómo se referencian archivos desde otras aplicaciones?</h2>
+    <p>
+      En angular en sí no se “importa” directamente desde otras aplicaciones, pero sí puede
+      integrarse con:</p>
+
+    <ul>
+      <li><strong>APIs externas</strong> mediante servicios HTTP.</li>
+      <li><strong>Microfrontends</strong> usando frameworks como Module Federation.</li>
+      <li><strong>Bibliotecas compartidas</strong> vía npm.</li>
+      <li><strong>Componentes externos</strong> importando módulos o librerías de terceros.</li>
+    </ul>
+
+    <h2>Referenciar imagenes dentro de nuestra aplicación</h2>
+
+    <p>
+      En el caso de que te fuese necesario introducir imagenes, como ves en este tutorial, 
+      deberas modificar el proyecto, añadiendo dentro de tu <code>src</code> la carpeta <code>assets</code> donde introduciras tus imágenes.
+    </p>
+    <p>
+         <img src="SRC-Assets-Explicacion.png" alt="Carpeta Assets" style="border-radius: 15px;">
+    </p>
+    <p>
+      Tambien deberas modificar el archivo de tu proyecto <code>angular.json</code> y añadir la linea que te muestro:
+    </p>
+    <p>
+         <img src="ModifiJsonAssets.png" alt="Json Assets" style="border-radius: 15px;" width="800" height="300">
+    </p>
+    <p>
+      De esta manera podras mostrar imagenes guardadas en tu proyecto, desde cualquier componente en su archivo <code>.html</code>
+    </p>
+    <pre><code>&lt;img src="../assets/ModifiJsonAssets.png"&gt;</code></pre>
+
+  </div>
+
+
+</section>

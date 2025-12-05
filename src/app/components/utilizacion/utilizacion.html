@@ -1,0 +1,114 @@
+<section class="contenedor-utilizacion">
+
+  <h1>4. Utilización del Framework Angular</h1>
+
+  <div class="apartado">
+    <h2>¿Cómo empezar a crear una aplicación base?</h2>
+    <p>
+      Como hemos visto en el apartado anterior angular genera automáticamente una estructura inicial muy completa al crear un nuevo
+      proyecto. Esta aplicación base incluye componentes, módulos, archivos de configuración,
+      un sistema de rutas opcional y un entorno preparado para compilar, probar y desplegar.
+    </p>
+
+    <p>
+      Tras ejecutar:
+    </p>
+
+    <pre><code>ng new nombre-de-tu-aplicacion</code></pre>
+
+    <p>
+      Angular crea su estructura como hemos visto anteriormente.
+    </p>
+
+    <p>
+      Esta estructura permite comenzar a programar inmediatamente sin necesidad de configurar
+      herramientas adicionales.
+    </p>
+  </div>
+
+  <div class="apartado">
+    <h2>El componente principal (App)</h2>
+    <p>
+      El archivo <strong>app.html</strong> es la vista principal de la aplicación.
+      Todo lo que se muestre por defecto aparece aquí.
+    </p>
+    <p>
+      Para personalizar la aplicación base, puedes editar este archivo y 
+      agregar tu contenido como hemos visto en los primeros pasos.
+    </p>
+
+    <pre><code>&lt;h1&gt;Bienvenido a mi aplicación en Angular&lt;/h1&gt;</code></pre>
+  </div>
+
+  <div class="apartado">
+    <h2>Paso 4: Crear un componente personalizado “Hola Mundo”</h2>
+    <p>
+      También puedes crear un componente propio con este comando:
+    </p>
+
+    <pre><code>ng generate component hola-mundo</code></pre>
+
+    <p>
+      Esto generará una carpeta con los archivos:
+    </p>
+
+    <ul>
+      <li>hola-mundo.ts</li>
+      <li>hola-mundo.html</li>
+      <li>hola-mundo.css</li>
+      <li>hola-mundo.spec.ts</li>
+    </ul>
+
+    <p>Luego edita el archivo HTML generado <strong>hola-mundo.html</strong>:</p>
+
+    <pre><code>&lt;h2&gt;¡¡¡¡Hola Mundo!!!!&lt;/h2&gt;</code></pre>
+
+    <p>
+      Deberás, inserta el componente en <strong>app.html</strong>:
+    </p>
+
+    <pre><code>&lt;app-hola-mundo&gt;&lt;/app-hola-mundo&gt;</code></pre>
+
+    <p> 
+      Por último, abre tu archivo <strong>app.ts</strong> e importalo como te muestro a continuación:
+    </p>   
+    <p> 
+         <img src="ImportarComponente.png" alt="Importamos Componente Hola Mundo" style="border-radius: 15px;" >
+    </p>
+    <p> 
+         <small>(En mi caso lo he importado desde el componente utilización para visualizarlo)</small>
+    </p>
+    <p>
+      Se mostrara de esta manera:
+    </p>
+
+    <app-hola-mundo></app-hola-mundo>
+
+    <p>
+      También podras modificar su estilo desde <strong>hola-mundo.css</strong>
+    </p>
+  
+  </div>
+
+  <div class="apartado">
+    <h2>¿Cómo visualizar los resultados de la ejecución?</h2>
+    <p>
+      Angular incluye un servidor de desarrollo que actualiza la página automáticamente cada
+      vez que editas un archivo. Para ejecutarlo, usa:
+    </p>
+
+    <pre><code>ng serve</code></pre>
+
+    <p>
+      Después, abre el navegador en:
+      <br><strong>http://localhost:4200</strong>
+    </p>
+
+    <p>
+      Desde ese momento, cualquier cambio en componentes, estilos o módulos se reflejará en
+      tiempo real, facilitandote la creación de la aplicación.
+    </p>
+  </div>
+
+
+</section>

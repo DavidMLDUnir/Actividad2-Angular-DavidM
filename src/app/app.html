@@ -1,0 +1,32 @@
+<section class="contenedor-APP">
+
+  <!-- HEADER PRINCIPAL -->
+  <header class="cabecera-principal">
+    <div class="header-content">
+      <h1>{{nombreProyecto}}</h1>
+    </div>
+  </header>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <div class="navbar-contenedor">
+      <a *ngFor="let sec of secciones" [routerLink]="sec.ruta" routerLinkActive="active" class="nav-button">
+        {{ sec.nombre }}
+      </a>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenido-principal">
+    <!-- Home y componentes se renderizan via rutas -->
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Aplicaciones en Red - David Mengibar López-Duque</p>
+  </footer>
+
+</section>
+
+
